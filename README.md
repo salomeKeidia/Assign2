@@ -38,8 +38,39 @@ added the trending, recommend and recent tmdb endpoints to the movies api
 
 recommend and favourites page
 
-## Independent learning (If relevant).
+## API Configuration
 
-Itemize the technologies/techniques you researched independently and adopted in your project, 
-i.e. aspects not covered in the lectures/labs. Include the source code filenames that illustrate these 
-(we do not require code excerpts) and provide references to the online resources that helped you (articles/blogs).
+create an `.env` file 
+______________________
+NODEENV=development
+PORT=8080
+HOST=
+mongoDB=YourMongoURL
+seedDb=true
+secret=YourJWTSecret
+
+REACT_APP_TMDB_KEY=b267e71297bef4a2b953bc453157cd12
+FAST_REFRESH=false
+
+______________________
+
+## API Design 
+
+- /api/movies | GET | Gets a list of movies 
+- /api/movies/{movieid} | GET | Gets a single movie 
+- /api/movies/{movieid}/reviews | GET | Get all reviews for movie 
+- /api/movies/{movieid}/reviews | POST | Create a new review for Movie 
+
+
+## Security and Authentication
+
+added a protected route to recommend and favourites page
+added authentication contexts
+
+## Integrating with React App
+
+i used the movies api by npm starting it in its own directory which made me able to log in into my react app
+
+## Independent learning (if relevant)
+
+Briefly explain any non-standard features developed for the app.   
