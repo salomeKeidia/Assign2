@@ -53,7 +53,27 @@ export const getMovies = () => {
        throw error
     });
   };
-  
+
+  export const login = (username, password) => {
+    return fetch('/api/users', {
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        method: 'post',
+        body: JSON.stringify({ username: username, password: password })
+    }).then(res => res.json())
+};
+
+export const signup = (username, password) => {
+    return fetch('/api/users?action=register', {
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        method: 'post',
+        body: JSON.stringify({ username: username, password: password })
+    }).then(res => res.json())
+};
+
   export const getRecommendMovies = () => {
     return fetch(
       `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
