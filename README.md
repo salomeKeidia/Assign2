@@ -24,6 +24,7 @@ an env file might be required. run the movies api folder for the log in to work 
 
 + sign up - /signup
 + sign in - /login
+added the trending, recommend and recent tmdb endpoints to the movies api
 
 ## Routing.
 

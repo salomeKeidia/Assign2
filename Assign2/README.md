@@ -4,44 +4,44 @@ Name: Salome Keidia
 
 ## Overview.
 
-[A brief statement on the content of this repository.]
+this repository features web api, where a sign out, sign in and sign up is integrated with the react app.
+it has a protected route on the recommendations page so it can only be viewed when logged in.
+integrated with mongo
 
 ### Features.
-[ A bullet-point list of the __new features__ you added to the Movies Fan app (and any modifications to existing features) .]
-
-
 + added sign up page with api route
 + added login page with api route
 + added a protected route to the recommend page
 + added a proxy router package json
-+ etc
++ added authentication functionality
 
 ## Setup requirements.
 
-[ Outline any non-standard setup steps necessary to run your app locally after cloning the repo.]
+an env file might be required. run npm start to start in the server in Assign 2 folder.run the movies api folder for the log in to work 
+you have to run mongo and mongod
 
 ## API endpoints.
 
-[ List the __additional__ TMDB endpoints used, giving the description and pathname for each one.] 
 
-e.g.
-+ Discover list of movies - discover/movie
-+ Movie details - movie/:id
-+ Movie genres = /genre/movie/list
++ sign up - /signup
++ sign in - /login
+added the trending, recommend and recent tmdb endpoints to the movies api
 
 ## Routing.
 
 [ List the __new routes__ supported by your app and state the associated page.]
 
-+ /blogs - displays all published blogs.
-+ /blogs/:id - displays a particular blog.
-+ /blogs/:id/comments - detail view of a particular blog and its comments.
-+ etc.
++ //login
+/signup
+
 
 [If relevant, state what aspects of your app are protected (i.e. require authentication) and what is public.]
+
+recommend and favourites page
 
 ## Independent learning (If relevant).
 
 Itemize the technologies/techniques you researched independently and adopted in your project, 
 i.e. aspects not covered in the lectures/labs. Include the source code filenames that illustrate these 
 (we do not require code excerpts) and provide references to the online resources that helped you (articles/blogs).
+
