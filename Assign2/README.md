@@ -9,12 +9,11 @@ Name: Salome Keidia
 ### Features.
 [ A bullet-point list of the __new features__ you added to the Movies Fan app (and any modifications to existing features) .]
 
-i added a recommendations, trending and recent page
-i added the route links and the endpoints of popular, top rated and now playing
-+ Feature 1
-+ Feature 2
-+ Feature 3
-+ etc
+
++ added sign up page with api route
++ added login page with api route
++ added a protected route to the recommend page
++ added a proxy router package json
 + etc
 
 ## Setup requirements.
